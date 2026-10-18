@@ -1,0 +1,26 @@
+
+#ifndef ___AIFLEETCOMMAND_H
+#define ___AIFLEETCOMMAND_H
+
+#include "types.h"
+#include "spaceobj.h"
+
+void aifFleetCommand(void);
+
+void aifInit(struct AIPlayer *aiplayer);
+void aifClose(struct AIPlayer *aiplayer);
+
+void aifTeamDied(struct AIPlayer *aiplayer,struct AITeam *team, bool32 removeAllReferencesToTeam);
+
+bool32 aifShipDied(struct AIPlayer *aiplayer,ShipPtr ship);
+
+void aifResourceManRequestsShipsCB(ShipType shiptype,sdword number,sdword priority);
+void aifAttackManRequestsShipsCB(ShipType shiptype,sdword number,sdword priority);
+void aifDefenseManRequestsShipsCB(ShipType shiptype,sdword number,sdword priority);
+void aifAddShipToTeam(struct AITeam *team, Ship *ship);
+
+void aifTeamRequestsShipsCB(ShipType shiptype,sdword number,struct AITeam *team,char *doneSetVar, sdword priority);
+sdword aifShipLimitAdjust(struct AIPlayer *aiplayer, ShipType shiptype, sdword numRequested);
+
+void aifHyperspaceInit(AIPlayer *aiplayer);
+#endif

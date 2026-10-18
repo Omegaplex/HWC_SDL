@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <RootNamespace>Cataclysm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cataclysm</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>$(CATACLYSM_PATH)</LocalDebuggerWorkingDirectory>
+    <OutDir>$(SolutionDir)Debug\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CataclysmTargetName Condition="'$(CataclysmTargetName)' == ''">cataclysm_debug</CataclysmTargetName>
+    <TargetName>$(CataclysmTargetName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerWorkingDirectory>$(CATACLYSM_PATH)</LocalDebuggerWorkingDirectory>
+    <OutDir>$(SolutionDir)Release\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CataclysmTargetName Condition="'$(CataclysmTargetName)' == ''">cataclysm_release</CataclysmTargetName>
+    <TargetName>$(CataclysmTargetName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;HW_BUILD_FOR_DEBUGGING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\Game;src\Win32;src\Ships;src\Generated;hw_rgl;hw_rgl\rgl_common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForcedIncludeFiles>compat.h</ForcedIncludeFiles>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;dsound.lib;ddraw.lib;dxguid.lib;wsock32.lib;ole32.lib;windowscodecs.lib;vendored\fq\dct.obj;vendored\fq\fqcodec.obj;vendored\fq\fquant.obj;vendored\fq\fqeffect.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>src\Win32\Cataclysm.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;HW_Release;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>CATACLYSM_DIAG</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\Game;src\Win32;src\Ships;src\Generated;hw_rgl;hw_rgl\rgl_common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForcedIncludeFiles>compat.h</ForcedIncludeFiles>
+      <CompileAs>Default</CompileAs>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>winmm.lib;dsound.lib;ddraw.lib;dxguid.lib;wsock32.lib;ole32.lib;windowscodecs.lib;vendored\fq\dct.obj;vendored\fq\fqcodec.obj;vendored\fq\fquant.obj;vendored\fq\fqeffect.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>src\Win32\Cataclysm.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Win32\main.c" />
+    <ClCompile Include="src\Win32\jpginterfce.c" />
+    <ClCompile Include="src\Win32\screenshot.c" />
+    <ClCompile Include="src\Win32\CrashLog.cpp" />
+    <ClCompile Include="src\Win32\Debug.cpp">
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <AdditionalOptions>/utf-8 /std:c++20 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile Include="src\Win32\Cataclysm.rc" />
+    <ClCompile Include="src\Game\ping.c" />
+    <ClCompile Include="src\Game\ping_save.c" />
+    <ClCompile Include="src\Game\stubs.c" />
+    <ClCompile Include="src\Game\AIVar.c" />
+    <ClCompile Include="src\Game\B-Spline.c" />
+    <ClCompile Include="src\Game\battle.c" />
+    <ClCompile Include="src\Game\BattleChat.c" />
+    <ClCompile Include="src\Game\BitIO.c" />
+    <ClCompile Include="src\Game\bmp.c" />
+    <ClCompile Include="src\Game\Clamp.c" />
+    <ClCompile Include="src\Game\clipper.c" />
+    <ClCompile Include="src\Game\crc32.c" />
+    <ClCompile Include="src\Game\demo.c" />
+    <ClCompile Include="src\Game\eval.c" />
+    <ClCompile Include="src\Game\fastmath.c" />
+    <ClCompile Include="src\Game\file.c" />
+    <ClCompile Include="src\Game\FeFlow.c" />
+    <ClCompile Include="src\Game\fontreg.c" />
+    <ClCompile Include="src\Game\gamepick.c" />
+    <ClCompile Include="src\Game\Hash.c" />
+    <ClCompile Include="src\Game\HorseRace.c" />
+    <ClCompile Include="src\Game\key.c" />
+    <ClCompile Include="src\Game\KeyBindings.c" />
+    <ClCompile Include="src\Game\LinkedList.c" />
+    <ClCompile Include="src\Game\LOD.c" />
+    <ClCompile Include="src\Game\LZSS.C" />
+    <ClCompile Include="src\Game\matrix.c" />
+    <ClCompile Include="src\Game\madLinkIn.c" />
+    <ClCompile Include="src\Game\memory.c" />
+    <ClCompile Include="src\Game\meshanim.c" />
+    <ClCompile Include="src\Game\mex.c" />
+    <ClCompile Include="src\Game\MultiplayerGame.c" />
+    <ClCompile Include="src\Game\MultiplayerLANGame.c" />
+    <ClCompile Include="src\Game\Player.c" />
+    <ClCompile Include="src\Game\ProfileTimers.c" />
+    <ClCompile Include="src\Game\Randy.c" />
+    <ClCompile Include="src\Game\region.c" />
+    <ClCompile Include="src\Game\scroller.c" />
+    <ClCompile Include="src\Game\star3d.c" />
+    <ClCompile Include="src\Game\task.c" />
+    <ClCompile Include="src\Game\teams.c" />
+    <ClCompile Include="src\Game\Timer.c" />
+    <ClCompile Include="src\Game\tracking.c" />
+    <ClCompile Include="src\Game\transformer.c" />
+    <ClCompile Include="src\Game\Tutorial1.c" />
+    <ClCompile Include="src\Game\Twiddle.c" />
+    <ClCompile Include="src\Game\undo.c" />
+    <ClCompile Include="src\Game\Vector.c" />
+    <ClCompile Include="src\Game\Volume.c" />
+    <ClCompile Include="src\Game\rescollect.c" />
+    <ClCompile Include="src\Game\CameraCommand.c" />
+    <ClCompile Include="src\Game\gun.c" />
+    <ClCompile Include="src\Game\CommandWrap.c" />
+    <ClCompile Include="src\Game\consMgr.c" />
+    <ClCompile Include="src\Game\dock.c" />
+    <ClCompile Include="src\Game\objtypes.c" />
+    <ClCompile Include="src\Game\etg.c" />
+    <ClCompile Include="src\Game\CommandLayer.c" />
+    <ClCompile Include="src\Game\beam.c" />
+    <ClCompile Include="src\Game\universe.c" />
+    <ClCompile Include="src\Win32\utility.c" />
+    <ClCompile Include="src\Win32\trails.c" />
+    <ClCompile Include="src\Game\UIcontrols.c" />
+    <ClCompile Include="src\Game\formation.c" />
+    <ClCompile Include="src\Game\KAS.c" />
+    <ClCompile Include="src\Game\KASRemap.c" />
+    <ClCompile Include="src\Game\levelload.c" />
+    <ClCompile Include="src\Game\tweak.c" />
+    <ClCompile Include="src\Game\launchMgr.c" />
+    <ClCompile Include="src\Game\shipview.c" />
+    <ClCompile Include="src\Game\researchgui.c" />
+    <ClCompile Include="src\Game\TaskManager.c" />
+    <ClCompile Include="src\Game\TradeMgr.c" />
+    <ClCompile Include="src\Game\stats.c" />
+    <ClCompile Include="src\Game\statscript.c" />
+    <ClCompile Include="src\Game\taskbar.c" />
+    <ClCompile Include="src\Game\FeReg.c" />
+    <ClCompile Include="src\Game\Alliance.c" />
+    <ClCompile Include="src\Game\Captaincy.c" />
+    <ClCompile Include="src\Game\ACV.c" />
+    <ClCompile Include="src\Game\ShipHelpers.c" />
+    <ClCompile Include="src\Game\Ship.c" />
+    <ClCompile Include="src\Game\SalCapCorvetteHelpers.c" />
+    <ClCompile Include="src\Game\LagPrint.c" />
+    <ClCompile Include="src\Game\Leech.c" />
+    <ClCompile Include="src\Game\bounties.c" />
+    <ClCompile Include="src\Game\attack.c" />
+    <ClCompile Include="src\Game\autodownloadmap.c" />
+    <ClCompile Include="src\Game\autolod.c" />
+    <ClCompile Include="src\Game\damage.c" />
+    <ClCompile Include="src\Game\Dreadnought.c" />
+    <ClCompile Include="src\Game\ShipUpgrade.c" />
+    <ClCompile Include="src\Game\shipselect.c" />
+    <ClCompile Include="src\Game\pieplate.c" />
+    <ClCompile Include="src\Game\scenpick.c" />
+    <ClCompile Include="src\Game\nebulae.c" />
+    <ClCompile Include="src\Game\clouds.c" />
+    <ClCompile Include="src\Game\nis.c" />
+    <ClCompile Include="src\Game\Objectives.c" />
+    <ClCompile Include="src\Game\InfoOverlay.c" />
+    <ClCompile Include="src\Game\AIFleetMan.c" />
+    <ClCompile Include="src\Game\AISkirmish.c" />
+    <ClCompile Include="src\Game\AIPlayer.c" />
+    <ClCompile Include="src\Game\AIResourceMan.c" />
+    <ClCompile Include="src\Game\KASFunc.c" />
+    <ClCompile Include="src\Game\MissionScriptSupport.c" />
+    <ClCompile Include="src\Game\mission01.c" />
+    <ClCompile Include="src\Game\mission02.c" />
+    <ClCompile Include="src\Game\mission03.c" />
+    <ClCompile Include="src\Game\mission04.c" />
+    <ClCompile Include="src\Game\mission05.c" />
+    <ClCompile Include="src\Game\mission05_oem.c" />
+    <ClCompile Include="src\Game\mission06.c" />
+    <ClCompile Include="src\Game\mission07.c" />
+    <ClCompile Include="src\Game\mission08.c" />
+    <ClCompile Include="src\Game\mission09.c" />
+    <ClCompile Include="src\Game\mission10.c" />
+    <ClCompile Include="src\Game\mission11.c" />
+    <ClCompile Include="src\Game\mission12.c" />
+    <ClCompile Include="src\Game\mission13.c" />
+    <ClCompile Include="src\Game\mission14.c" />
+    <ClCompile Include="src\Game\mission15.c" />
+    <ClCompile Include="src\Game\mission16.c" />
+    <ClCompile Include="src\Game\mission17.c" />
+    <ClCompile Include="src\Game\singleplayer.c" />
+    <ClCompile Include="src\Game\tactical.c" />
+    <ClCompile Include="src\Game\tactics.c" />
+    <ClCompile Include="src\Game\Tutorial1Scripts.c" />
+    <ClCompile Include="src\Game\ChatGUI.c" />
+    <ClCompile Include="src\Game\univupdate.c" />
+    <ClCompile Include="src\Game\Tutor.c" />
+    <ClCompile Include="src\Game\SoundEventStop.c" />
+    <ClCompile Include="src\Game\GameChat.c" />
+    <ClCompile Include="src\Game\sensors.c" />
+    <ClCompile Include="src\Game\AIShip.c" />
+    <ClCompile Include="src\Game\soundeventplay.c" />
+    <ClCompile Include="src\Game\soundevent.c" />
+    <ClCompile Include="src\Game\shockwave.c" />
+    <ClCompile Include="src\Game\speechevent.c" />
+    <ClCompile Include="src\Win32\soundlow.c" />
+    <ClCompile Include="src\Win32\smixer.c" />
+    <ClCompile Include="src\Win32\sstream.c" />
+    <ClCompile Include="src\Game\physics.c" />
+    <ClCompile Include="src\Game\blobs.c" />
+    <ClCompile Include="src\Game\crates.c" />
+    <ClCompile Include="src\Game\options.c" />
+    <ClCompile Include="src\Game\bigfile.c" />
+    <ClCompile Include="src\Win32\color.c" />
+    <ClCompile Include="src\Win32\debugwnd.c" />
+    <ClCompile Include="src\Win32\font.c" />
+    <ClCompile Include="src\Win32\glcaps.c" />
+    <ClCompile Include="src\Win32\light.c" />
+    <ClCompile Include="src\Win32\LinkEnd.c" />
+    <ClCompile Include="src\Win32\LinkStart.c" />
+    <ClCompile Include="src\Win32\mixfft.c" />
+    <ClCompile Include="src\Win32\prim2d.c" />
+    <ClCompile Include="src\Win32\prim3d.c" />
+    <ClCompile Include="src\Win32\Queue.c" />
+    <ClCompile Include="src\Win32\rglu.c" />
+    <ClCompile Include="src\Game\Subtitle.c">
+      <ObjectFileName>$(IntDir)Game\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Win32\Subtitle.c" />
+    <ClCompile Include="src\Win32\TimeoutTimer.c" />
+    <ClCompile Include="src\Win32\Titan.c" />
+    <ClCompile Include="src\Win32\mouse.c" />
+    <ClCompile Include="src\Win32\gldll.c" />
+    <ClCompile Include="src\Win32\hwwindow.c" />
+    <ClCompile Include="src\Win32\render.c" />
+    <ClCompile Include="src\Win32\rinit.c" />
+    <ClCompile Include="src\Win32\texreg.c" />
+    <ClCompile Include="src\Win32\mainrgn.c" />
+    <ClCompile Include="src\Win32\glcompat.c" />
+    <ClCompile Include="src\Win32\wave.c" />
+    <ClCompile Include="src\Win32\wassert.c" />
+    <ClCompile Include="src\Game\AIAttackMan.c" />
+    <ClCompile Include="src\Game\AIDefenseMan.c" />
+    <ClCompile Include="src\Game\AIHandler.c" />
+    <ClCompile Include="src\Game\AIMoves.c" />
+    <ClCompile Include="src\Game\AIOrders.c" />
+    <ClCompile Include="src\Game\AITeam.c" />
+    <ClCompile Include="src\Game\AItrack.c" />
+    <ClCompile Include="src\Game\AIUtilities.c" />
+    <ClCompile Include="src\Game\btg.c" />
+    <ClCompile Include="src\Game\camera.c" />
+    <ClCompile Include="src\Game\Acolyte.c" />
+    <ClCompile Include="src\Game\RepairDroid.c" />
+    <ClCompile Include="src\Game\CommandNetwork.c" />
+    <ClCompile Include="src\Game\flightman.c" />
+    <ClCompile Include="src\Game\mesh.c" />
+    <ClCompile Include="src\Game\navlights.c" />
+    <ClCompile Include="src\Game\particle.c" />
+    <ClCompile Include="src\Game\SaveGame.c" />
+    <ClCompile Include="src\Game\shader.c" />
+    <ClCompile Include="src\Game\select.c" />
+    <ClCompile Include="src\Game\hs.c" />
+    <ClCompile Include="src\Game\colpick.c" />
+    <ClCompile Include="src\Game\collision.c" />
+    <ClCompile Include="src\Game\netcheck.c" />
+    <ClCompile Include="src\Game\AIEvents.c" />
+    <ClCompile Include="src\Game\Globals.c" />
+    <ClCompile Include="src\Game\chatting.c" />
+    <ClCompile Include="src\Game\ChannelFSM.c" />
+    <ClCompile Include="src\Game\Research.c" />
+    <ClCompile Include="src\Game\researchapi.c" />
+    <ClCompile Include="src\Game\RammingFrigate.c" />
+    <ClCompile Include="src\Game\titannet.c" />
+    <ClCompile Include="src\Ships\AdvanceSupportFrigate.c" />
+    <ClCompile Include="src\Ships\DFGFrigate.c" />
+    <ClCompile Include="src\Ships\FloatingCity.c" />
+    <ClCompile Include="src\Ships\GravWellGenerator.c" />
+    <ClCompile Include="src\Ships\HeavyCorvette.c" />
+    <ClCompile Include="src\Ships\HeavyCruiser.c" />
+    <ClCompile Include="src\Ships\IonCannonFrigate.c" />
+    <ClCompile Include="src\Ships\MinelayerCorvette.c" />
+    <ClCompile Include="src\Ships\MissileDestroyer.c" />
+    <ClCompile Include="src\Ships\P1IonArrayFrigate.c" />
+    <ClCompile Include="src\Ships\P1Mothership.c" />
+    <ClCompile Include="src\Ships\MultiBeamFrigate.c" />
+    <ClCompile Include="src\Ships\Carrier.c" />
+    <ClCompile Include="src\Ships\CruiseMissile.c" />
+    <ClCompile Include="src\Ships\DefaultShip.c" />
+    <ClCompile Include="src\Ships\HiveFrigate.c" />
+    <ClCompile Include="src\Ships\MCV.c" />
+    <ClCompile Include="src\Ships\Mimic.c" />
+    <ClCompile Include="src\Ships\Sentinel.c" />
+    <ClCompile Include="src\Ships\GenericDefender.c" />
+    <ClCompile Include="src\Ships\GenericInterceptor.c" />
+    <ClCompile Include="src\Ships\BeastMothership.c" />
+    <ClCompile Include="src\Ships\Mothership.c" />
+    <ClCompile Include="src\Ships\MultiGunCorvette.c" />
+    <ClCompile Include="src\Ships\P1MissileCorvette.c" />
+    <ClCompile Include="src\Ships\P1StandardCorvette.c" />
+    <ClCompile Include="src\Ships\ProximitySensor.c" />
+    <ClCompile Include="src\Ships\RepairCorvette.c" />
+    <ClCompile Include="src\Ships\ResourceCollector.c" />
+    <ClCompile Include="src\Ships\RKO.c" />
+    <ClCompile Include="src\Ships\Swarmer.c" />
+    <ClCompile Include="src\Ships\BigGun.c" />
+    <ClCompile Include="src\Game\SalCapCorvette.c" />
+    <ClCompile Include="src\Game\slipgate.c" />
+    <ClCompile Include="src\Ships\Worker.c" />
+    <ClCompile Include="src\Ships\StandardDestroyer.c" />
+    <ClCompile Include="src\Ships\StandardFrigate.c" />
+    <ClCompile Include="src\Game\Strings.c" />
+  </ItemGroup>
+  <ItemGroup Label="CET_Reference">
+    <!-- CET source files: reference only, not compiled as part of this project -->
+    <None Include="src\Game\rinit.cpp" />
+    <None Include="src\Win32\glcaps.cpp" />
+    <None Include="src\Win32\soundlow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Game\AIAttackMan.h" />
+    <ClInclude Include="src\Game\AIDefenseMan.h" />
+    <ClInclude Include="src\Game\AIEvents.h" />
+    <ClInclude Include="src\Game\ACV.h" />
+    <ClInclude Include="src\Game\AIFeatures.h" />
+    <ClInclude Include="src\Game\AIFleetMan.h" />
+    <ClInclude Include="src\Game\AIHandler.h" />
+    <ClInclude Include="src\Game\AIMoves.h" />
+    <ClInclude Include="src\Game\AIOrders.h" />
+    <ClInclude Include="src\Game\AIPlayer.h" />
+    <ClInclude Include="src\Game\AIResourceMan.h" />
+    <ClInclude Include="src\Game\AIShip.h" />
+    <ClInclude Include="src\Game\AISkirmish.h" />
+    <ClInclude Include="src\Game\AITeam.h" />
+    <ClInclude Include="src\Game\AITrack.h" />
+    <ClInclude Include="src\Game\AIUtilities.h" />
+    <ClInclude Include="src\Game\AIVar.h" />
+    <ClInclude Include="src\Game\Alliance.h" />
+    <ClInclude Include="src\Game\Animatic.h" />
+    <ClInclude Include="src\Game\Attack.h" />
+    <ClInclude Include="src\Game\Attributes.h" />
+    <ClInclude Include="src\Game\AutoDownloadMap.h" />
+    <ClInclude Include="src\Game\AutoLOD.h" />
+    <ClInclude Include="src\Game\b-spline.h" />
+    <ClInclude Include="src\Game\Battle.h" />
+    <ClInclude Include="src\Game\BattleChat.h" />
+    <ClInclude Include="src\Game\beam.h" />
+    <ClInclude Include="src\Game\BigFile.h" />
+    <ClInclude Include="src\Game\BitIO.h" />
+    <ClInclude Include="src\Game\blobs.h" />
+    <ClInclude Include="src\Game\BMP.h" />
+    <ClInclude Include="src\Game\Bounties.h" />
+    <ClInclude Include="src\Game\BTG.h" />
+    <ClInclude Include="src\Game\camera.h" />
+    <ClInclude Include="src\Game\CameraCommand.h" />
+    <ClInclude Include="src\Game\Captaincy.h" />
+    <ClInclude Include="src\Game\ChannelFSM.h" />
+    <ClInclude Include="src\Game\Chatting.h" />
+    <ClInclude Include="src\Game\Clamp.h" />
+    <ClInclude Include="src\Game\ClassDefs.h" />
+    <ClInclude Include="src\Game\Clipper.h" />
+    <ClInclude Include="src\Game\clouds.h" />
+    <ClInclude Include="src\Game\Collision.h" />
+    <ClInclude Include="src\Game\Color.h" />
+    <ClInclude Include="src\Game\ColPick.h" />
+    <ClInclude Include="src\Game\CommandDefs.h" />
+    <ClInclude Include="src\Game\CommandLayer.h" />
+    <ClInclude Include="src\Game\CommandNetwork.h" />
+    <ClInclude Include="src\Game\CommandWrap.h" />
+    <ClInclude Include="src\Game\consMgr.h" />
+    <ClInclude Include="src\Game\Crates.h" />
+    <ClInclude Include="src\Game\crc32.h" />
+    <ClInclude Include="src\Game\Damage.h" />
+    <ClInclude Include="src\Game\Dreadnought.h" />
+    <ClInclude Include="src\Game\Debug.h" />
+    <ClInclude Include="src\Game\Demo.h" />
+    <ClInclude Include="src\Game\dock.h" />
+    <ClInclude Include="src\Game\etg.h" />
+    <ClInclude Include="src\Game\Eval.h" />
+    <ClInclude Include="src\Game\FastMath.h" />
+    <ClInclude Include="src\Game\FEColour.h" />
+    <ClInclude Include="src\Game\FeFlow.h" />
+    <ClInclude Include="src\Game\FEReg.h" />
+    <ClInclude Include="src\Game\File.h" />
+    <ClInclude Include="src\Game\FlightMan.h" />
+    <ClInclude Include="src\Game\FlightManDefs.h" />
+    <ClInclude Include="src\Game\FontReg.h" />
+    <ClInclude Include="src\Game\formation.h" />
+    <ClInclude Include="src\Game\FormationDefs.h" />
+    <ClInclude Include="src\Game\GameChat.h" />
+    <ClInclude Include="src\Game\GamePick.h" />
+    <ClInclude Include="src\Game\gamestats.h" />
+    <ClInclude Include="src\Game\Globals.h" />
+    <ClInclude Include="src\Game\Gun.h" />
+    <ClInclude Include="src\Game\Hash.h" />
+    <ClInclude Include="src\Game\HorseRace.h" />
+    <ClInclude Include="src\Game\HS.h" />
+    <ClInclude Include="src\Game\InfoOverlay.h" />
+    <ClInclude Include="src\Game\KAS.h" />
+    <ClInclude Include="src\Game\KASFunc.h" />
+    <ClInclude Include="src\Game\KASHashes.h" />
+    <ClInclude Include="src\Game\KEY.H" />
+    <ClInclude Include="src\Game\KeyBindings.h" />
+    <ClInclude Include="src\Game\LagPrint.h" />
+    <ClInclude Include="src\Game\LaunchMgr.h" />
+    <ClInclude Include="src\Game\Leech.h" />
+    <ClInclude Include="src\Game\LetterDefs.h" />
+    <ClInclude Include="src\Game\LevelLoad.h" />
+    <ClInclude Include="src\Game\Light.h" />
+    <ClInclude Include="src\Game\liloptions.h" />
+    <ClInclude Include="src\Game\linkedlist.h" />
+    <ClInclude Include="src\Game\LOD.h" />
+    <ClInclude Include="src\Game\LZSS.h" />
+    <ClInclude Include="src\Game\MadLinkIn.h" />
+    <ClInclude Include="src\Game\MadLinkInDefs.h" />
+    <ClInclude Include="src\Game\matrix.h" />
+    <ClInclude Include="src\Game\MaxMultiPlayer.h" />
+    <ClInclude Include="src\Game\Memory.h" />
+    <ClInclude Include="src\Game\mesh.h" />
+    <ClInclude Include="src\Game\meshanim.h" />
+    <ClInclude Include="src\Game\MEX.h" />
+    <ClInclude Include="src\Game\MissionScriptSupport.h" />
+    <ClInclude Include="src\Game\ModuleDefs.h" />
+    <ClInclude Include="src\Game\MultiplayerGame.h" />
+    <ClInclude Include="src\Game\MultiplayerLANGame.h" />
+    <ClInclude Include="src\Game\NavLights.h" />
+    <ClInclude Include="src\Game\nebulae.h" />
+    <ClInclude Include="src\Game\NetCheck.h" />
+    <ClInclude Include="src\Game\NIS.h" />
+    <ClInclude Include="src\Game\NumberDefs.h" />
+    <ClInclude Include="src\Game\Objectives.h" />
+    <ClInclude Include="src\Game\objtypes.h" />
+    <ClInclude Include="src\Game\Options.h" />
+    <ClInclude Include="src\Game\particle.h" />
+    <ClInclude Include="src\Game\Physics.h" />
+    <ClInclude Include="src\Game\pieplate.h" />
+    <ClInclude Include="src\Game\Ping.h" />
+    <ClInclude Include="src\Game\PlugScreen.h" />
+    <ClInclude Include="src\Game\ProfileTimers.h" />
+    <ClInclude Include="src\Game\RaceDefs.h" />
+    <ClInclude Include="src\Game\RammingFrigate.h" />
+    <ClInclude Include="src\Game\Randy.h" />
+    <ClInclude Include="src\Game\region.h" />
+    <ClInclude Include="src\Game\RepairDroid.h" />
+    <ClInclude Include="src\Game\rescollect.h" />
+    <ClInclude Include="src\Game\researchapi.h" />
+    <ClInclude Include="src\Game\ResearchGUI.h" />
+    <ClInclude Include="src\Game\SaveGame.h" />
+    <ClInclude Include="src\Game\ScenPick.h" />
+    <ClInclude Include="src\Game\Scroller.h" />
+    <ClInclude Include="src\Game\select.h" />
+    <ClInclude Include="src\Game\Sensors.h" />
+    <ClInclude Include="src\Game\Shader.h" />
+    <ClInclude Include="src\Game\Ship.h" />
+    <ClInclude Include="src\Game\ShipDefs.h" />
+    <ClInclude Include="src\Game\ships.h" />
+    <ClInclude Include="src\Game\shipselect.h" />
+    <ClInclude Include="src\Game\ShipView.h" />
+    <ClInclude Include="src\Game\shockwave.h" />
+    <ClInclude Include="src\Game\singleplayer.h" />
+    <ClInclude Include="src\Game\SoundEvent.h" />
+    <ClInclude Include="src\Game\SoundEventDefs.h" />
+    <ClInclude Include="src\Game\SoundEventPrivate.h" />
+    <ClInclude Include="src\Game\SoundMusic.h" />
+    <ClInclude Include="src\Game\soundstructs.h" />
+    <ClInclude Include="src\Game\spaceobj.h" />
+    <ClInclude Include="src\Game\SpeechEvent.h" />
+    <ClInclude Include="src\Game\star3d.h" />
+    <ClInclude Include="src\Game\Stats.h" />
+    <ClInclude Include="src\Game\statscript.h" />
+    <ClInclude Include="src\Game\Strings.h" />
+    <ClInclude Include="src\Game\StringsOnly.h" />
+    <ClInclude Include="src\Game\StringSupport.h" />
+    <ClInclude Include="src\Game\Subtitle.h" />
+    <ClInclude Include="src\Game\Switches.h" />
+    <ClInclude Include="src\Game\Tactical.h" />
+    <ClInclude Include="src\Game\Tactics.h" />
+    <ClInclude Include="src\Game\task.h" />
+    <ClInclude Include="src\Game\TaskBar.h" />
+    <ClInclude Include="src\Game\Teams.h" />
+    <ClInclude Include="src\Game\Timer.h" />
+    <ClInclude Include="src\Game\TitanNet.h" />
+    <ClInclude Include="src\Game\Tracking.h" />
+    <ClInclude Include="src\Game\TradeMgr.h" />
+    <ClInclude Include="src\Game\Trails.h" />
+    <ClInclude Include="src\Game\Transformer.h" />
+    <ClInclude Include="src\Game\Tutor.h" />
+    <ClInclude Include="src\Game\tutorial.h" />
+    <ClInclude Include="src\Game\tweak.h" />
+    <ClInclude Include="src\Game\Twiddle.h" />
+    <ClInclude Include="src\Game\TYPES.h" />
+    <ClInclude Include="src\Game\UIcontrols.h" />
+    <ClInclude Include="src\Game\Undo.h" />
+    <ClInclude Include="src\Game\universe.h" />
+    <ClInclude Include="src\Game\UnivUpdate.h" />
+    <ClInclude Include="src\Game\vector.h" />
+    <ClInclude Include="src\Game\VolTweakDefs.h" />
+    <ClInclude Include="src\Game\Volume.h" />
+    <ClInclude Include="src\Ships\BeastMothership.h" />
+    <ClInclude Include="src\Ships\BigGun.h" />
+    <ClInclude Include="src\Ships\HiveFrigate.h" />
+    <ClInclude Include="src\Ships\Mimic.h" />
+    <ClInclude Include="src\Ships\Slipgate.h" />
+    <ClInclude Include="src\Ships\Swarmer.h" />
+    <ClInclude Include="src\Ships\Worker.h" />
+    <ClInclude Include="src\Win32\avi.h" />
+    <ClInclude Include="src\Win32\bink_Rad.h" />
+    <ClInclude Include="src\Win32\bink.h" />
+    <ClInclude Include="src\Win32\ClientCDKey.h" />
+    <ClInclude Include="src\Win32\color.h" />
+    <ClInclude Include="src\Win32\dct.h" />
+    <ClInclude Include="src\Win32\debugwnd.h" />
+    <ClInclude Include="src\Win32\devstats.h" />
+    <ClInclude Include="src\Win32\dxdraw.h" />
+    <ClInclude Include="src\Win32\font.h" />
+    <ClInclude Include="src\Win32\fqcodec.h" />
+    <ClInclude Include="src\Win32\fqeffect.h" />
+    <ClInclude Include="src\Win32\fquant.h" />
+    <ClInclude Include="src\Win32\glcaps.h" />
+    <ClInclude Include="src\Win32\glcompat.h" />
+    <ClInclude Include="src\Win32\gldefines.h" />
+    <ClInclude Include="src\Win32\gldll.h" />
+    <ClInclude Include="src\Win32\glext.h" />
+    <ClInclude Include="src\Win32\glinc.h" />
+    <ClInclude Include="src\Win32\jpginterfce.h" />
+    <ClInclude Include="src\Win32\leakyfaucet.h" />
+    <ClInclude Include="src\Win32\light.h" />
+    <ClInclude Include="src\Win32\LinkLimits.h" />
+    <ClInclude Include="src\Win32\main.h" />
+    <ClInclude Include="src\Win32\mainrgn.h" />
+    <ClInclude Include="src\Win32\mainswitches.h" />
+    <ClInclude Include="src\Win32\Md52.h" />
+    <ClInclude Include="src\Win32\mouse.h" />
+    <ClInclude Include="src\Win32\prim2d.h" />
+    <ClInclude Include="src\Win32\prim3d.h" />
+    <ClInclude Include="src\Win32\qpcfix.h" />
+    <ClInclude Include="src\Win32\Queue.h" />
+    <ClInclude Include="src\Win32\rad.h" />
+    <ClInclude Include="src\Win32\radbink.h" />
+    <ClInclude Include="src\Win32\regkey.h" />
+    <ClInclude Include="src\Win32\render.h" />
+    <ClInclude Include="src\Win32\resource.h" />
+    <ClInclude Include="src\Win32\rglu.h" />
+    <ClInclude Include="src\Win32\rinit.h" />
+    <ClInclude Include="src\Win32\screenshot.h" />
+    <ClInclude Include="src\Win32\soundcmn.h" />
+    <ClInclude Include="src\Win32\soundlow.h" />
+    <ClInclude Include="src\Win32\Subtitle.h" />
+    <ClInclude Include="src\Win32\texreg.h" />
+    <ClInclude Include="src\Win32\TimeoutTimer.h" />
+    <ClInclude Include="src\Win32\timer.h" />
+    <ClInclude Include="src\Win32\Titan.h" />
+    <ClInclude Include="src\Win32\TitanInterface.h" />
+    <ClInclude Include="src\Win32\TitanInterfaceC.h" />
+    <ClInclude Include="src\Win32\TitanPacketMsg.h" />
+    <ClInclude Include="src\Win32\trails.h" />
+    <ClInclude Include="src\Win32\utility.h" />
+    <ClInclude Include="src\Win32\wassert.h" />
+    <ClInclude Include="src\Win32\wave.h" />
+    <ClInclude Include="src\Win32\zmouse.h" />
+    <ClInclude Include="src\Ships\AdvanceSupportFrigate.h" />
+    <ClInclude Include="src\Ships\Carrier.h" />
+    <ClInclude Include="src\Ships\CloakGenerator.h" />
+    <ClInclude Include="src\Ships\DDDFrigate.h" />
+    <ClInclude Include="src\Ships\DefaultShip.h" />
+    <ClInclude Include="src\Ships\Sentinel.h" />
+    <ClInclude Include="src\Ships\DefenseFighter.h" />
+    <ClInclude Include="src\Ships\DFGFrigate.h" />
+    <ClInclude Include="src\Ships\Drone.h" />
+    <ClInclude Include="src\Ships\FloatingCity.h" />
+    <ClInclude Include="src\Ships\GenericDefender.h" />
+    <ClInclude Include="src\Ships\GenericInterceptor.h" />
+    <ClInclude Include="src\Ships\GravWellGenerator.h" />
+    <ClInclude Include="src\Ships\HeavyCorvette.h" />
+    <ClInclude Include="src\Ships\HeavyCruiser.h" />
+    <ClInclude Include="src\Ships\IonCannonFrigate.h" />
+    <ClInclude Include="src\Ships\LightCorvette.h" />
+    <ClInclude Include="src\Ships\MinelayerCorvette.h" />
+    <ClInclude Include="src\Ships\MissileDestroyer.h" />
+    <ClInclude Include="src\Ships\Mothership.h" />
+    <ClInclude Include="src\Ships\MultiGunCorvette.h" />
+    <ClInclude Include="src\Ships\P1IonArrayFrigate.h" />
+    <ClInclude Include="src\Ships\P1MissileCorvette.h" />
+    <ClInclude Include="src\Ships\P1Mothership.h" />
+    <ClInclude Include="src\Ships\P1StandardCorvette.h" />
+    <ClInclude Include="src\Ships\P2AdvanceSwarmer.h" />
+    <ClInclude Include="src\Ships\P2FuelPod.h" />
+    <ClInclude Include="src\Ships\P2Mothership.h" />
+    <ClInclude Include="src\Ships\MultiBeamFrigate.h" />
+    <ClInclude Include="src\Ships\P2Swarmer.h" />
+    <ClInclude Include="src\Ships\P3StandardShip.h" />
+    <ClInclude Include="src\Ships\Probe.h" />
+    <ClInclude Include="src\Ships\ProximitySensor.h" />
+    <ClInclude Include="src\Ships\RepairCorvette.h" />
+    <ClInclude Include="src\Ships\ResearchShip.h" />
+    <ClInclude Include="src\Ships\ResourceCollector.h" />
+    <ClInclude Include="src\Ships\ResourceController.h" />
+    <ClInclude Include="src\Ships\SalCapCorvette.h" />
+    <ClInclude Include="src\Ships\SensorArray.h" />
+    <ClInclude Include="src\Ships\ShipDefs.h" />
+    <ClInclude Include="src\Ships\Ships.h" />
+    <ClInclude Include="src\Ships\StandardDestroyer.h" />
+    <ClInclude Include="src\Ships\StandardFrigate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Win32\Cataclysm.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

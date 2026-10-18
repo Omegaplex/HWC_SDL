@@ -1,0 +1,4 @@
+# Default MSBuild options
+# This file is automatically loaded by MSBuild for all projects in this directory
+/m
+/nologo

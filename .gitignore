@@ -1,0 +1,58 @@
+# Build output
+Debug/
+Release/
+x64/
+x86/
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.log
+
+# Precompiled obj files — except the ones in lib\ which are source-controlled
+*.obj
+!lib/*.obj
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+ipch/
+*.aps
+
+# vcpkg
+vcpkg_installed/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# IDA artifacts
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.i64
+
+test_compile/
+worktrees/
+temp/
+
+# Frida runtime venv (tooling deps are pip-installed locally)
+tools/frida/.venv/
+.mcp.json
+
+*.pyc
+*.db

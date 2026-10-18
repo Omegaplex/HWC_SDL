@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <!-- Default ASan on for non-Release builds; override with /p:EnableASAN=true or false. -->
+        <EnableASAN Condition="'$(EnableASAN)' == '' and '$(Configuration)' == 'Release'">false</EnableASAN>
+        <EnableASAN Condition="'$(EnableASAN)' == '' and '$(Configuration)' != 'Release'">true</EnableASAN>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Vcpkg">
+        <VcpkgEnableManifest>true</VcpkgEnableManifest>
+        <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(EnableASAN)' == 'true'">
+        <EnableAddressSanitizer>true</EnableAddressSanitizer>
+    </PropertyGroup>
+
+    <ItemDefinitionGroup Condition="'$(EnableASAN)' == 'true'">
+        <ClCompile>
+            <RuntimeLibrary Condition="'$(Configuration)' == 'Debug'">MultiThreadedDebugDLL</RuntimeLibrary>
+        </ClCompile>
+        <Link>
+            <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+        </Link>
+    </ItemDefinitionGroup>
+
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+    </ItemDefinitionGroup>
+
+    <Target Name="GenerateBuildContextHeader"
+            BeforeTargets="ClCompile"
+            Condition="Exists('$(ProjectDir)scripts\write_build_context.ps1')">
+        <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(ProjectDir)scripts\write_build_context.ps1&quot; -RepoDir &quot;$(MSBuildProjectDirectory)&quot; -OutputPath &quot;$(IntDir)BuildContext.generated.h&quot;" />
+    </Target>
+</Project>

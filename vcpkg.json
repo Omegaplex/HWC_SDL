@@ -1,0 +1,9 @@
+{
+  "name": "cataclysm",
+  "version-string": "0.0.0",
+  "builtin-baseline": "b35194bce64fed3c48646cb32467e7725453c840",
+  "dependencies": [
+    "fmt",
+    "spdlog"
+  ]
+}

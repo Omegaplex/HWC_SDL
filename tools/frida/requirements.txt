@@ -1,0 +1,2 @@
+frida==17.15.3
+pefile

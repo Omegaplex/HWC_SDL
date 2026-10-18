@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1D3A9C16-81D5-4B61-A61E-61F690A59A6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game">
+      <UniqueIdentifier>{D21863CE-1F2D-49C4-B5C2-3CFD8C7A4A58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Win32">
+      <UniqueIdentifier>{1E2FC8B0-1B95-4E73-AEA0-E6394B8F5C4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Ships">
+      <UniqueIdentifier>{B7944D59-C19D-4AF8-BDF3-6A92E0E8A3E4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Win32\main.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\jpginterfce.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\CrashLog.cpp">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\Debug.cpp">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ping_save.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\stubs.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIVar.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\B-Spline.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\BattleChat.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\BitIO.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\bmp.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Clamp.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\clipper.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\crc32.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\demo.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\eval.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\fastmath.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\file.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\FeFlow.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\fontreg.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\gamepick.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Hash.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\HorseRace.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\key.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\KeyBindings.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\LinkedList.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\LOD.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\LZSS.C">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\matrix.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\memory.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\meshanim.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\mex.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\MultiplayerGame.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Player.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ProfileTimers.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Randy.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\region.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\scroller.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\star3d.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\task.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\teams.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Timer.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\tracking.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\transformer.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Tutorial1.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Twiddle.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\undo.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Vector.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Volume.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\rescollect.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CameraCommand.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\gun.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CommandWrap.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\consMgr.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\dock.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\objtypes.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\etg.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Ship.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CommandLayer.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\universe.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\utility.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\trails.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\UIcontrols.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\formation.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\KAS.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\KASRemap.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\levelload.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\tweak.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\launchMgr.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\shipview.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\researchgui.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\TaskManager.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\TradeMgr.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\statscript.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\taskbar.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ChatGUI.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\FeReg.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Alliance.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Captaincy.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ACV.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ShipHelpers.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SalCapCorvetteHelpers.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\LagPrint.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\bounties.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\attack.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\autodownloadmap.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\autolod.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\damage.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Dreadnought.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ShipUpgrade.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\RKO.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\shipselect.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\pieplate.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\scenpick.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\nebulae.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\clouds.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\nis.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Objectives.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\InfoOverlay.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIFleetMan.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIPlayer.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIResourceMan.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\KASFunc.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\singleplayer.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\tactics.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\univupdate.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Tutor.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SoundEventStop.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameChat.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\sensors.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIShip.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\soundeventplay.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\soundevent.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\speechevent.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\soundlow.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\smixer.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\sstream.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\physics.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\blobs.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\options.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\tactical.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\bigfile.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\color.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\debugwnd.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\font.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\glcaps.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\light.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\LinkEnd.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\LinkStart.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\mixfft.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\prim2d.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\prim3d.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\Queue.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\rglu.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\Subtitle.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\TimeoutTimer.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\Titan.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\mouse.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\gldll.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\hwwindow.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\render.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\rinit.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\texreg.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\mainrgn.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\glcompat.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\wave.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\wassert.c">
+      <Filter>src\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIAttackMan.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIDefenseMan.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIHandler.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIMoves.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIOrders.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AITeam.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AItrack.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIUtilities.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\btg.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\camera.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CommandNetwork.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\flightman.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\mesh.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\navlights.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\particle.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SaveGame.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\shader.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\select.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\hs.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\colpick.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\collision.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\AIEvents.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Globals.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\chatting.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\ChannelFSM.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\researchapi.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\titannet.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\Carrier.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\CruiseMissile.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\DefaultShip.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\GenericDefender.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\GenericInterceptor.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\Mothership.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\MultiGunCorvette.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\P1MissileCorvette.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\P1StandardCorvette.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\ProximitySensor.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\ResourceCollector.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\Swarmer.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\Worker.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\StandardDestroyer.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ships\StandardFrigate.c">
+      <Filter>src\Ships</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Strings.c">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\screenshot.c" />
+    <ClCompile Include="src\Game\ping.c" />
+    <ClCompile Include="src\Game\battle.c" />
+    <ClCompile Include="src\Game\madLinkIn.c" />
+    <ClCompile Include="src\Game\MultiplayerLANGame.c" />
+    <ClCompile Include="src\Game\beam.c" />
+    <ClCompile Include="src\Game\stats.c" />
+    <ClCompile Include="src\Game\Leech.c" />
+    <ClCompile Include="src\Game\AISkirmish.c" />
+    <ClCompile Include="src\Game\MissionScriptSupport.c" />
+    <ClCompile Include="src\Game\mission01.c" />
+    <ClCompile Include="src\Game\mission02.c" />
+    <ClCompile Include="src\Game\mission03.c" />
+    <ClCompile Include="src\Game\mission04.c" />
+    <ClCompile Include="src\Game\mission05.c" />
+    <ClCompile Include="src\Game\mission05_oem.c" />
+    <ClCompile Include="src\Game\mission06.c" />
+    <ClCompile Include="src\Game\mission07.c" />
+    <ClCompile Include="src\Game\mission08.c" />
+    <ClCompile Include="src\Game\mission09.c" />
+    <ClCompile Include="src\Game\mission10.c" />
+    <ClCompile Include="src\Game\mission11.c" />
+    <ClCompile Include="src\Game\mission12.c" />
+    <ClCompile Include="src\Game\mission13.c" />
+    <ClCompile Include="src\Game\mission14.c" />
+    <ClCompile Include="src\Game\mission15.c" />
+    <ClCompile Include="src\Game\mission16.c" />
+    <ClCompile Include="src\Game\mission17.c" />
+    <ClCompile Include="src\Game\Tutorial1Scripts.c" />
+    <ClCompile Include="src\Game\shockwave.c" />
+    <ClCompile Include="src\Game\crates.c" />
+    <ClCompile Include="src\Game\Subtitle.c" />
+    <ClCompile Include="src\Game\Acolyte.c" />
+    <ClCompile Include="src\Game\RepairDroid.c" />
+    <ClCompile Include="src\Game\netcheck.c" />
+    <ClCompile Include="src\Game\Research.c" />
+    <ClCompile Include="src\Game\RammingFrigate.c" />
+    <ClCompile Include="src\Ships\AdvanceSupportFrigate.c" />
+    <ClCompile Include="src\Ships\DFGFrigate.c" />
+    <ClCompile Include="src\Ships\FloatingCity.c" />
+    <ClCompile Include="src\Ships\GravWellGenerator.c" />
+    <ClCompile Include="src\Ships\HeavyCorvette.c" />
+    <ClCompile Include="src\Ships\HeavyCruiser.c" />
+    <ClCompile Include="src\Ships\IonCannonFrigate.c" />
+    <ClCompile Include="src\Ships\MinelayerCorvette.c" />
+    <ClCompile Include="src\Ships\MissileDestroyer.c" />
+    <ClCompile Include="src\Ships\P1IonArrayFrigate.c" />
+    <ClCompile Include="src\Ships\P1Mothership.c" />
+    <ClCompile Include="src\Ships\MultiBeamFrigate.c" />
+    <ClCompile Include="src\Ships\HiveFrigate.c" />
+    <ClCompile Include="src\Ships\MCV.c" />
+    <ClCompile Include="src\Ships\Mimic.c" />
+    <ClCompile Include="src\Ships\Sentinel.c" />
+    <ClCompile Include="src\Ships\BeastMothership.c" />
+    <ClCompile Include="src\Ships\RepairCorvette.c" />
+    <ClCompile Include="src\Ships\BigGun.c" />
+    <ClCompile Include="src\Game\SalCapCorvette.c" />
+    <ClCompile Include="src\Game\slipgate.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Game\AIAttackMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIDefenseMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIEvents.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ACV.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIFeatures.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIFleetMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIHandler.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIMoves.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIOrders.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIPlayer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIResourceMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIShip.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AITeam.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AITrack.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIUtilities.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AIVar.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Alliance.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Animatic.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Attack.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Attributes.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AutoDownloadMap.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\AutoLOD.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\b-spline.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Battle.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\BigFile.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\BitIO.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\blobs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\BMP.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Bounties.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\BTG.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\camera.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CameraCommand.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Captaincy.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ChannelFSM.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Chatting.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Clamp.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ClassDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Clipper.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\clouds.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Collision.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Color.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ColPick.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CommandDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CommandLayer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CommandNetwork.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CommandWrap.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\consMgr.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Crates.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\crc32.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Damage.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Dreadnought.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Debug.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Demo.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\dock.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\etg.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Eval.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FastMath.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FEColour.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FeFlow.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FEReg.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\File.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FlightMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FlightManDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FontReg.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\formation.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\FormationDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameChat.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GamePick.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\gamestats.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Globals.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Gun.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Hash.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\HorseRace.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\HS.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\InfoOverlay.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\KAS.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\KASFunc.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\KEY.H">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\KeyBindings.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LagPrint.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LaunchMgr.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LetterDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LevelLoad.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Light.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\liloptions.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\linkedlist.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LOD.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\LZSS.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MadLinkIn.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MadLinkInDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\matrix.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MaxMultiPlayer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Memory.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\mesh.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\meshanim.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MEX.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ModuleDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MultiplayerGame.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MultiplayerLANGame.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\NavLights.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\nebulae.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\NetCheck.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\NIS.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\NumberDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Objectives.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\objtypes.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Options.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\particle.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Physics.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\pieplate.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Ping.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\PlugScreen.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ProfileTimers.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\RaceDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Randy.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\region.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\rescollect.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\researchapi.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ResearchGUI.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SaveGame.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ScenPick.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Scroller.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\select.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Sensors.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Shader.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ShipDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ships.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\shipselect.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ShipView.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\singleplayer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SoundEvent.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SoundEventDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SoundEventPrivate.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SoundMusic.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\soundstructs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\spaceobj.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SpeechEvent.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\star3d.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Stats.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\statscript.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Strings.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\StringsOnly.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\StringSupport.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Subtitle.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Switches.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Tactical.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Tactics.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\task.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\TaskBar.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Teams.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Timer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\TitanNet.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Tracking.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\TradeMgr.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Trails.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Transformer.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Tutor.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\tutorial.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\tweak.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Twiddle.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\TYPES.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\UIcontrols.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Undo.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\universe.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\UnivUpdate.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\vector.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\VolTweakDefs.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Volume.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\avi.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\bink_Rad.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\bink.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\ClientCDKey.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\color.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\dct.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\debugwnd.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\devstats.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\dxdraw.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\font.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\fqcodec.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\fqeffect.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\fquant.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\glcaps.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\glcompat.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\gldefines.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\gldll.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\glext.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\glinc.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\leakyfaucet.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\light.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\LinkLimits.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\main.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\mainrgn.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\mainswitches.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\Md52.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\mouse.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\prim2d.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\prim3d.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\Queue.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\rad.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\radbink.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\regkey.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\render.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\resource.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\rglu.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\rinit.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\screenshot.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\soundcmn.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\soundlow.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\Subtitle.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\texreg.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\TimeoutTimer.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\timer.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\Titan.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\TitanInterface.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\TitanInterfaceC.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\TitanPacketMsg.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\trails.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\utility.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\wassert.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\wave.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Win32\zmouse.h">
+      <Filter>src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\AdvanceSupportFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Carrier.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\CloakGenerator.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\DDDFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\DefaultShip.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\DefenseFighter.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\DFGFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Drone.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\FloatingCity.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\GenericDefender.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\GenericInterceptor.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\GravWellGenerator.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\HeavyCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\HeavyCruiser.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\IonCannonFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\LightCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\MinelayerCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\MissileDestroyer.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Mothership.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\MultiGunCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P1IonArrayFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P1MissileCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P1Mothership.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P1StandardCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P2AdvanceSwarmer.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P2FuelPod.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P2Mothership.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P2Swarmer.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\P3StandardShip.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Probe.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\ProximitySensor.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\RepairCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\ResearchShip.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\ResourceCollector.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\ResourceController.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\SalCapCorvette.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\SensorArray.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\ShipDefs.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Ships.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\StandardDestroyer.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\StandardFrigate.h">
+      <Filter>src\Ships</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ships\Sentinel.h" />
+    <ClInclude Include="src\Ships\MultiBeamFrigate.h" />
+    <ClInclude Include="src\Game\MissionScriptSupport.h" />
+    <ClInclude Include="src\Game\Leech.h" />
+    <ClInclude Include="src\Win32\qpcfix.h" />
+    <ClInclude Include="src\Game\shockwave.h" />
+    <ClInclude Include="src\Game\Ship.h" />
+    <ClInclude Include="src\Game\RepairDroid.h" />
+    <ClInclude Include="src\Game\RammingFrigate.h" />
+    <ClInclude Include="src\Win32\jpginterfce.h" />
+    <ClInclude Include="src\Ships\Swarmer.h" />
+    <ClInclude Include="src\Ships\Worker.h" />
+    <ClInclude Include="src\Ships\Slipgate.h" />
+    <ClInclude Include="src\Ships\Mimic.h" />
+    <ClInclude Include="src\Ships\HiveFrigate.h" />
+    <ClInclude Include="src\Ships\BigGun.h" />
+    <ClInclude Include="src\Ships\BeastMothership.h" />
+    <ClInclude Include="src\Game\KASHashes.h" />
+    <ClInclude Include="src\Game\beam.h" />
+    <ClInclude Include="src\Game\BattleChat.h" />
+    <ClInclude Include="src\Game\AISkirmish.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Game\rinit.cpp">
+      <Filter>src\Game</Filter>
+    </None>
+    <None Include="src\Win32\glcaps.cpp">
+      <Filter>src\Win32</Filter>
+    </None>
+    <None Include="src\Win32\soundlow.cpp">
+      <Filter>src\Win32</Filter>
+    </None>
+    <None Include="src\Win32\Cataclysm.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\Win32\Cataclysm.rc" />
+  </ItemGroup>
+</Project>

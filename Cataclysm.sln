@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12112.369 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cataclysm", "Cataclysm.vcxproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		AGENTS.md = AGENTS.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rgl", "hw_rgl\rgl.vcxproj", "{920928D1-9CF7-47D1-B5C9-34DEF750B412}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rgld3d9", "hw_rgl\D3D9\rgld3d9.vcxproj", "{729063C6-9A88-4FBD-B3D7-8D67B17240C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rgl_common", "hw_rgl\rgl_common\rgl_common.vcxproj", "{F49BA33E-B015-4105-8A7E-29467C181D03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|x86.Build.0 = Debug|Win32
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|x86.ActiveCfg = Release|Win32
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|x86.Build.0 = Release|Win32
+		{920928D1-9CF7-47D1-B5C9-34DEF750B412}.Debug|x86.ActiveCfg = Debug|Win32
+		{920928D1-9CF7-47D1-B5C9-34DEF750B412}.Debug|x86.Build.0 = Debug|Win32
+		{920928D1-9CF7-47D1-B5C9-34DEF750B412}.Release|x86.ActiveCfg = Release|Win32
+		{920928D1-9CF7-47D1-B5C9-34DEF750B412}.Release|x86.Build.0 = Release|Win32
+		{729063C6-9A88-4FBD-B3D7-8D67B17240C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{729063C6-9A88-4FBD-B3D7-8D67B17240C0}.Debug|x86.Build.0 = Debug|Win32
+		{729063C6-9A88-4FBD-B3D7-8D67B17240C0}.Release|x86.ActiveCfg = Release|Win32
+		{729063C6-9A88-4FBD-B3D7-8D67B17240C0}.Release|x86.Build.0 = Release|Win32
+		{F49BA33E-B015-4105-8A7E-29467C181D03}.Debug|x86.ActiveCfg = Debug|Win32
+		{F49BA33E-B015-4105-8A7E-29467C181D03}.Debug|x86.Build.0 = Debug|Win32
+		{F49BA33E-B015-4105-8A7E-29467C181D03}.Release|x86.ActiveCfg = Release|Win32
+		{F49BA33E-B015-4105-8A7E-29467C181D03}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE65B907-C9EF-4F4B-8907-5C55E0AC8748}
+	EndGlobalSection
+EndGlobal
